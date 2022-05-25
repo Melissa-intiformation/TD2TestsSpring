@@ -15,13 +15,14 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @Table
 @Data
-@AllArgsConstructor @RequiredArgsConstructor @NoArgsConstructor
+@AllArgsConstructor @NoArgsConstructor @RequiredArgsConstructor
 public class Salarie
 {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private @NonNull String nom;
 	private @NonNull String prenom;
-	private String email;
+	private @NonNull String email;
 }
